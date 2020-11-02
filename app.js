@@ -23,8 +23,20 @@ app.use(session({
 
 app.use(express.static(__dirname + '/public'))
 
-app.get('/', function(req, res){
-    res.render('index.ejs')
+app.get('/customer/registration', function(req, res){
+    res.render('customer_reg.ejs')
+})
+app.get('/deliveryboy/registration', function(req, res){
+    res.render('deliveryboy_reg.ejs')
+})
+app.get('/medicalstore/registration', function(req, res){
+    res.render('deliveryboy_reg.ejs')
+})
+app.get('/welcome', function(req, res){
+    res.render('welcome.ejs')
+})
+app.get('/customer', function(req, res){
+    res.render('customer.ejs')
 })
 
 app.listen(port);

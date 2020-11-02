@@ -1,5 +1,5 @@
 var mongoose = require('mongoose');
-var UserSchema = new mongoose.Schema({
+var MedicalStoreSchema = new mongoose.Schema({
     firstname:{
         type: String,
         required: true
@@ -24,11 +24,14 @@ var UserSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    dateOfBirth:{
-        type: Date,
-        default: Date.now,
+    phone:{
+        type: string,
         required: true
+    },
+    address:{
+        type: string,
+        required: true,
     }
 });
-var User = mongoose.model('User', UserSchema);
-module.exports = User;
+var MedicalStore = mongoose.model('MedicalStore', MedicalStoreSchema);
+module.exports = MedicalStore;
