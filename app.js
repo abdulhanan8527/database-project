@@ -44,6 +44,15 @@ app.get('/deliveryboy', function(req, res){
 app.get('/medicalstore', function(req, res){
     res.render('medicalstore.ejs')
 })
+app.get('/customer/login', function(req, res){
+    res.render('customer_login.ejs')
+})
+app.get('/deliveryboy/login', function(req, res){
+    res.render('deliveryboy_login.ejs')
+})
+app.get('/medicalstore/login', function(req, res){
+    res.render('medicalstore_login.ejs')
+})
 app.listen(port);
 
 console.log('Now the server is running on url: https://127.0.0.1:3000')

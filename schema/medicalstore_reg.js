@@ -25,12 +25,17 @@ var MedicalStoreSchema = new mongoose.Schema({
         required: true,
     },
     phone:{
-        type: string,
+        type: String,
         required: true
     },
     address:{
-        type: string,
+        type: String,
         required: true,
+    },
+    reg_date:{
+        type: Date,
+        required: true,
+        default: Date.now,
     }
 });
 var MedicalStore = mongoose.model('MedicalStore', MedicalStoreSchema);
