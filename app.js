@@ -30,7 +30,7 @@ app.get('/deliveryboy/registration', function(req, res){
     res.render('deliveryboy_reg.ejs')
 })
 app.get('/medicalstore/registration', function(req, res){
-    res.render('deliveryboy_reg.ejs')
+    res.render('medicalstore_reg.ejs')
 })
 app.get('/welcome', function(req, res){
     res.render('welcome.ejs')
