@@ -1,15 +1,19 @@
-body{
+body
+{
     align-items: center;
 }
-.content{
+.content
+{
     display: flex;
     background-color: grey;
 }
-.input{
+.input
+{
     display: flex;
     flex-direction: column;
 }
-.input label{
+.input label
+{
     float: left;
 }
 .input input{
